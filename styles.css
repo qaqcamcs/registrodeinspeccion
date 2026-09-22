@@ -204,6 +204,7 @@ input[type="file"]:disabled { opacity: 0.5; cursor: not-allowed; }
 }
 
 .lockScreen { max-width: 320px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.lockScreen[hidden] { display: none; }
 .lockScreen h2 { margin: 0 0 2px; font-size: 1.1rem; }
 
 .modalHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }

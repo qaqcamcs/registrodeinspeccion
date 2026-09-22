@@ -1,0 +1,10 @@
+{
+  "name": "Registro de Inspección de Soldadura",
+  "short_name": "Inspección",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F7FA",
+  "theme_color": "#1F3864",
+  "icons": []
+}

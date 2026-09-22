@@ -80,6 +80,7 @@ body {
   gap: 10px;
   flex-wrap: wrap;
 }
+.banner[hidden] { display: none; }
 
 .grid {
   display: grid;
@@ -193,6 +194,7 @@ input[type="file"]:disabled { opacity: 0.5; cursor: not-allowed; }
   padding: 16px;
   z-index: 100;
 }
+.overlay[hidden] { display: none; }
 .modal {
   background: #fff;
   border-radius: 10px;

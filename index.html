@@ -13,8 +13,11 @@
 <header class="topbar">
   <div class="topbar-inner">
     <h1>Registro de Inspección</h1>
-    <div id="connStatus" class="status status--offline">
-      <span class="dot"></span><span class="statusText">Sin conexión</span>
+    <div class="topbar-right">
+      <div id="connStatus" class="status status--offline">
+        <span class="dot"></span><span class="statusText">Sin conexión</span>
+      </div>
+      <button type="button" id="configBtn" class="iconBtn" title="Configuración" aria-label="Abrir configuración">⚙</button>
     </div>
   </div>
 </header>
@@ -133,6 +136,52 @@
 
   </form>
 </main>
+
+<!-- ============ MODAL: PANEL DE CONFIGURACIÓN ============ -->
+<div id="configOverlay" class="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="configTitle">
+
+    <div id="configLock" class="lockScreen">
+      <h2>Acceso a configuración</h2>
+      <p class="hint">Ingresa la clave de configuración del equipo.</p>
+      <input type="password" id="configPass" placeholder="Clave">
+      <p id="configLockMsg" class="formMsg err"></p>
+      <div class="modalActions">
+        <button type="button" class="btn btn--ghost" id="closeLockBtn">Cancelar</button>
+        <button type="button" class="btn btn--primary" id="unlockBtn">Entrar</button>
+      </div>
+    </div>
+
+    <div id="configBody" class="configBody" hidden>
+      <div class="modalHead">
+        <h2 id="configTitle">Configurar listas y condiciones</h2>
+        <button type="button" class="iconBtn" id="closeConfigBtn" aria-label="Cerrar">✕</button>
+      </div>
+
+      <p class="hint">
+        Elige un campo, edita sus opciones y, si corresponde, define de qué
+        otro campo depende y qué opciones mostrar según lo que se haya
+        elegido ahí.
+      </p>
+
+      <div class="configLayout">
+        <div class="fieldList" id="configFieldList"></div>
+
+        <div class="fieldEditor" id="fieldEditor">
+          <p class="hint">Selecciona un campo de la izquierda.</p>
+        </div>
+      </div>
+
+      <div id="configSyncMsg" class="formMsg" role="status" aria-live="polite"></div>
+
+      <div class="modalActions">
+        <button type="button" class="btn btn--ghost" id="resetConfigBtn">Restaurar valores por defecto</button>
+        <button type="button" class="btn btn--primary" id="saveConfigBtn">Guardar configuración</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script src="app.js"></script>
 </body>

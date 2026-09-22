@@ -4,7 +4,7 @@
    (botón ⚙ arriba a la derecha), no aquí.
    ========================================================================= */
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwmtluIA4IovxyhzqURFJwbrFIe-FWi-h2HYy7Mlvd664y8PCMasjShToeSoJc-FWsH/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/TU_DEPLOYMENT_ID/exec";
 
 // Clave para entrar al panel de configuración. Cámbiala por la tuya.
 const ACCESS_CODE = "0000";

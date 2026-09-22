@@ -1,5 +1,5 @@
 /* =========================================================================
-   CONFIGURACIÓN — URL de Google Apps Script y Clave PIN (0000)
+   CONFIGURACIÓN — URL de Google Apps Script y Clave PIN (0000) 
    ========================================================================= */
 
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwmtluIA4IovxyhzqURFJwbrFIe-FWi-h2HYy7Mlvd664y8PCMasjShToeSoJc-FWsH/exec";

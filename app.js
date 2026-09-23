@@ -4,7 +4,7 @@
    (botón ⚙ arriba a la derecha), no aquí.
    ========================================================================= */
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwmtluIA4IovxyhzqURFJwbrFIe-FWi-h2HYy7Mlvd664y8PCMasjShToeSoJc-FWsH/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyAQ-O82p5E1372-q_aOYv0qB57ueKyFOg_qGw0c9tz6wUn4RV_20yVu7yG90062U32/exec";
 
 // Clave para entrar al panel de configuración. Cámbiala por la tuya.
 const ACCESS_CODE = "0000";
